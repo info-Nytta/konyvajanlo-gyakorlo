@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #432;
+	background-image: url(../img/konyv_hatter.jpg);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+#keret {
+	background-color: #CCAA88;
+	border: 1px #ECA solid;
+	max-width: 720px;
+	margin: auto;
+}
+#keret h1 {
+	text-align: center;
+}
+#keret h2 {
+	text-align: center;
+}
+#keret .konyv {
+	background-color: #ECA;	
+	border: 1px #432 solid;
+	box-shadow: 3px 3px 3px #432;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+}
+#keret .konyv h1 {
+	text-align: left;
+}
+#keret .konyv h2 {
+	text-align: left;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+	img {
+		width: 120px;
+		float: left;
+		margin-right: 20px;
+	}
+	#keret {
+		padding: 20px;
+	}
+	.konyv {
+		background-image: url(../img/book_icon.png);
+		background-repeat: no-repeat;
+		background-size: 102px;
+		background-position: right center;
+		font-size: 0.8em;
+	}
+	#keret .konyv div {
+		overflow: auto;
+	}
+}
