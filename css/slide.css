@@ -1,0 +1,30 @@
+#slide {
+	text-align:center;
+	margin:50px auto;
+}
+#elozo, #kovi {
+	display:inline-block;
+	font-size: 300%;
+	padding: 5px;
+	font-weight: bold;
+}
+#elozo:hover, #kovi:hover {
+	cursor: pointer;
+	text-shadow: 0 0 5px black;
+}
+#kepek {
+	display:inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+#kepek img {
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+	display:inline-block;
+	margin: 5px;
+}
+#kepek img:hover {
+	box-shadow: 0 0 5px black;
+	cursor: pointer;
+}

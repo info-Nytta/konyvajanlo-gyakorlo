@@ -4,17 +4,28 @@
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/slide.css'>
 </head>
 <body>
   <div id='keret'>
     <h1>Könyvajánló</h1>
     <h2>Személyiségfejlesztés fiataloknak</h2>
-		
+	
 	<script src='js/konyvadat.js'></script>	
 	<script src='js/konyvlista.js'></script>	
-	<script>listazas()</script>	
-		
 	
+	<div id='konyvinfo'></div>
+	
+	<div id='slide'>	
+		<div id='elozo' onclick='mozgas(-1)'> &lt; </div>
+		<div id='kepek'></div>
+		<div onclick='mozgas(+1)' id='kovi'> &gt; </div>
+	</div>
+	<script>
+		var aktKonyv=0;
+		egyKonyv(0);
+		mozgas(0);
+	</script>		
   </div>
 </body>
 </html>
